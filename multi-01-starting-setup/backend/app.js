@@ -45,6 +45,7 @@ app.get('/goals', async (req, res) => {
 });
 
 app.post('/goals', async (req, res) => {
+  console.log("...Heck yeah We're Working!~");
   console.log('TRYING TO STORE GOAL');
   const goalText = req.body.text;
 
@@ -71,6 +72,7 @@ app.post('/goals', async (req, res) => {
 });
 
 app.delete('/goals/:id', async (req, res) => {
+  console.log("another testing marker... Nodemon, where you at!>")
   console.log('TRYING TO DELETE GOAL');
   try {
     await Goal.deleteOne({ _id: req.params.id });
