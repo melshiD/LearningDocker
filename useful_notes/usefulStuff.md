@@ -40,3 +40,7 @@ use admin
 db.createUser({user:"deepak", pwd: "example", roles: [{role: "userAdminAnyDatabase", db: "admin"}]})
 
 Now you should be able to connect to mongoDb from backend container.
+
+`````````````````
+command we used to make laravel app in src folder
+docker-compose run --rm composer create-project --prefer-dist laravel/laravel .
