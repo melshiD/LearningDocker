@@ -31,6 +31,8 @@ services:
       dockerfile: composer.dockerfile
     volumes:
       - ./src:/var/www/html
+    depends_on:
+      - php
   artisan:
     build:
       context: .

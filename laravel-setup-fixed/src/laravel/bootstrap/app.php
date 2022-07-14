@@ -26,11 +26,6 @@ $app = new Illuminate\Foundation\Application(
 |
 */
 
-
-//// not sure if adding this will help at all:
-
-
-
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
     App\Http\Kernel::class
@@ -45,6 +40,7 @@ $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     App\Exceptions\Handler::class
 );
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application
@@ -55,4 +51,5 @@ $app->singleton(
 | from the actual running of the application and sending responses.
 |
 */
+
 return $app;
