@@ -18,6 +18,8 @@ services:
     build:
       context: .
       dockerfile: dockerfiles/php.dockerfile
+    ports:
+      - '9000:9000'
     volumes:
       - ./src:/var/www/html:delegated
   mysql:
